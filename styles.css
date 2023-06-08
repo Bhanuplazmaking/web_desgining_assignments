@@ -1,0 +1,11 @@
+h1{
+    color:red;
+    margin-left: 100px;
+    background-color: goldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+
+}
+#head1{
+    color: rgb(red, green, blue);
+}
