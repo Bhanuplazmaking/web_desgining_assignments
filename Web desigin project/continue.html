@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continue</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="order-details">
+        <h2>Order Details</h2>
+        <ul>
+            <li>Product: <span id="product-name"></span></li>
+            <li>Price: <span id="product-price"></span></li>
+            <li>Quantity: <span id="product-quantity"></span></li>
+            <li>Total: <span id="order-total"></span></li>
+          </ul>
+        </div>
+        <div class="payment-details">
+            <h2>Payment Method</h2>
+            <div class="payment-options">
+              <label>
+                <input type="radio" name="payment-method" value="cash-on-delivery" checked>
+                Cash on Delivery
+              </label>
+              <label>
+                <input type="radio" name="payment-method" value="credit-card">
+                Credit Card
+              </label>
+              <label>
+                <input type="radio" name="payment-method" value="UPI">
+                UPI
+                </label>
+                </div>
+                </div>
+                <div class="address-details">
+                    <h2>Delivery Address</h2>
+                    <p id="house-address"></p>
+                  </div>
+                  <div class="container">
+                    <h1>Continue</h1>
+                    <p>Order details:</p>
+                    <!-- Your existing order details code here -->
+                
+                    <button id="place-order-btn">Place Order</button>
+                    <a href="placeorder.html" class="place-order-btn"></a>
+
+    <button id="continue-shopping-button">Continue Shopping</button>
+    <a href="index.html" class="continue-shopping-button">Continue Shopping</a>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+</body>
+</html>

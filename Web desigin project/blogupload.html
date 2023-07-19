@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Upload</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Upload Blog</h1>
+    <form id="blog-upload-form" enctype="multipart/form-data">
+      <label for="title">Title:</label>
+      <input type="text" id="title" required>
+
+      <label for="author">Author:</label>
+      <input type="text" id="author" required>
+
+      <label for="content">Content:</label>
+      <textarea id="content" rows="8" required></textarea>
+
+      <label for="image">Image:</label>
+      <input type="file" id="image" accept="image/*" required>
+
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Back To Home</a></li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const blogUploadForm = document.getElementById('blog-upload-form');
+    
+        blogUploadForm.addEventListener('submit', function(event) {
+          event.preventDefault();
+    
+          // Get the blog data from the form
+          const title = document.getElementById('title').value;
+          const author = document.getElementById('author').value;
+          const content = document.getElementById('content').value;
+    
+          // Create a unique identifier for the blog
+          const blogId = Date.now().toString();
+    
+          // Create an object with the blog data
+          const blogData = { id: blogId, title, author, content };
+    
+          // Store the blog data in local storage
+          const blogs = JSON.parse(localStorage.getItem('blogs')) || [];
+          blogs.push(blogData);
+          localStorage.setItem('blogs', JSON.stringify(blogs));
+    
+          // Reset the form
+          blogUploadForm.reset();
+    
+          // Redirect to the blog page
+          window.location.href = 'blog.html';
+        });
+      });
+    </script>
+
+</body>
+
+</html>

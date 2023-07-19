@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Details</h1>
+        <div id="product-details">
+          <div id="product-image" class="product-image"></div>
+          <img src="product-image.jpeg" alt="product image" width="1000px"height="200px">
+          <div id="product-info">
+            <h2 id="product-name"></h2>
+            <p id="product-description"></p>
+            <p id="product-price"></p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1">
+ 
+        <button id="buy-now-button">Buy now</button>
+        <a href="continue.html" class="continue-shopping-button">Continue Shopping</a>
+        <div id="review-section">
+            <h3>Customer Reviews</h3>
+            <ul id="review-list">
+            </ul>
+            <form id="review-form">
+              <label for="review-input">Write a review:</label>
+              <textarea id="review-input" rows="4"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+</body>
+</html>

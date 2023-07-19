@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coco-Nutty.com</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Add the toolbar -->
+  <nav id="toolbar">
+   
+    <a href="#" class="logo">
+        <img src="logo.png" alt="Website Logo">
+      </a>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product-list.html">Products</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blogupload.html">Upload Blog</a></li>
+        <li><a href="login.html">Login</a></li> <!-- Add the login page link -->
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+
+  <!-- Add the search bar -->
+  <form id="search-bar">
+    <input type="text" id="search-input" placeholder="Search products...">
+    <button type="submit">Search</button>
+  </form>
+
+  <!-- Add the product list -->
+  <section id="product-list">
+    <!-- Product items will be dynamically added here -->
+  </section>
+
+  <!-- Add the product details page -->
+  <section id="product-details" style="display: none;">
+    <h2>Product Details</h2>
+    <div id="product-details-content"></div>
+    <div id="product-image.jepg"></div> <!-- New image section -->
+    <div id="product-info"></div> <!-- Existing product information section -->
+  </div>
+    <button id="back-to-products">Back to Products</button>
+  </section>
+
+  
+  <div class="ad-space">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FT3ODSg1GFE?playlist=FT3ODSg1GFE&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <!-- Add the product rating section -->
+  <section id="product-rating">
+    <h2>Rate the Product</h2>
+    <select id="rating-select">
+      <option value="5">5 Stars</option>
+      <option value="4">4 Stars</option>
+      <option value="3">3 Stars</option>
+      <option value="2">2 Stars</option>
+      <option value="1">1 Star</option>
+    </select>
+    <button id="rating-submit" disabled>Submit Rating</button>
+  </section>
+
+  <script src="script.js"></script>
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Coco-Nutty enterprisers. All rights reserved.</p>
+      </div>
+    </footer>
+</body>
+</html>
